@@ -1,0 +1,1638 @@
+@import url('./fonts.css');
+@media (max-width: 992px) {
+    /* fade in */
+    body {
+        font-family: "Worksans";
+    }
+    .fade-in {
+        animation: fadeIn ease 1s;
+        -webkit-animation: fadeIn ease 1s;
+        -moz-animation: fadeIn ease 1s;
+        -o-animation: fadeIn ease 1s;
+        -ms-animation: fadeIn ease 1s;
+        animation: fadeIn ease 2s;
+        -webkit-animation: fadeIn ease 2s;
+        -moz-animation: fadeIn ease 2s;
+        -o-animation: fadeIn ease 2s;
+        -ms-animation: fadeIn ease 2s;
+    }
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @-moz-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @-webkit-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @-o-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @-ms-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    /* scrollbar */
+    .element,
+    html {
+        scrollbar-width: none
+    }
+    html::-webkit-scrollbar,
+    .element::-webkit-scrollbar {
+        display: none
+    }
+    /* sett body */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    button {
+        margin: 0;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-bottom: 0;
+        margin-top: 0;
+        font-family: "Worksans";
+    }
+    b {
+        font-family: "Worksans";
+        font-weight: bold;
+    }
+    h1 {
+        font-weight: bold;
+        font-size: 20px;
+    }
+    h2 {
+        font-weight: normal;
+        font-size: 15px;
+    }
+    h3 {
+        font-weight: bold;
+        font-size: 13px;
+    }
+    h4 {
+        font-size: 11px;
+        font-weight: normal;
+    }
+    h5 {
+        font-weight: lighter;
+        font-size: 20px;
+    }
+    h6 {
+        color: #644697;
+        font-size: 10px;
+    }
+    p {
+        font-weight: medium;
+        font-size: 12px;
+        color: #644697;
+        line-height: 10px;
+    }
+    a {
+        text-decoration: none;
+    }
+    hr {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .container {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .container {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .dot {
+        height: 26px;
+        width: 26px;
+        background-color: #42AEDC;
+        border-radius: 50%;
+        display: inline-block;
+    }
+    .ellipse {
+        position: relative;
+        width: 48px;
+        height: 48px;
+        left: 15px;
+        background: #FFFFFF;
+        text-align: center;
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    }
+    .flex-row {
+        display: flex;
+        margin-top: 5%;
+        flex-direction: row;
+    }
+    /* .col {
+        padding-right: 0;
+        padding-left: 0;
+    } */
+    /* bottom bar */
+    #bottom-bar .tab-container ul {
+        margin: 0;
+    }
+    .tab-container {
+        background: white;
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+        box-shadow: 0 5px 10px rgb(207, 131, 131);
+        padding: 10px;
+        width: 100%;
+        height: auto;
+    }
+    /* style bg menu */
+    .tab-container a {
+        text-decoration: none;
+        color: rgb(58, 50, 36);
+    }
+    .tab {
+        background: white;
+        border-radius: 50px;
+        cursor: pointer;
+        display: flex;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 20px;
+        margin: 0 10px;
+        transition: background 0.1s linear;
+    }
+    /* text hiden */
+    .tab p {
+        font-weight: bold;
+        overflow: hidden;
+        max-width: 0;
+    }
+    /* text aktiv */
+    .tab.active p {
+        font-size: 10px;
+        margin: auto 5px;
+        max-width: 200px;
+        transition: max-width 0.4s linear;
+        color: white;
+    }
+    /* background menu */
+    .tab.active.purple {
+        background: linear-gradient(to right, #704dac, rgba(31, 8, 70, 0.37));
+        color: white;
+    }
+    .tab.active.pink {
+        background: linear-gradient(to right, #704dac, rgba(31, 8, 70, 0.37));
+        color: white;
+    }
+    .tab.active.yellow {
+        background: linear-gradient(to right, #704dac, rgba(31, 8, 70, 0.37));
+        color: white;
+    }
+    .tab.active.teal {
+        background: linear-gradient(to right, #704dac, rgba(31, 8, 70, 0.37));
+        color: white;
+    }
+    /* bg navbar top */
+    #head-top .top-container {
+        background: white;
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+    }
+    #head-top .top-container .fas {
+        color: white;
+    }
+    #head-top .top-container a {
+        text-decoration: none;
+    }
+    /* playground */
+    #playground {
+        margin-top: 90px;
+    }
+    #playground span {
+        color: #42AEDC;
+        font-weight: 400;
+        font-size: 17px;
+    }
+    /* banner */
+    /* category */
+    /* search box */
+    #playground .search-box {
+        margin-top: 12px;
+    }
+    #playground input[type=text] {
+        width: 100%;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.120);
+        border-radius: 50px;
+        font-size: 16px;
+        border: none;
+        background-image: url('../Assets/ic_search.png');
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+    }
+    #playground input::placeholder {
+        color: #42AEDC;
+        font-size: 14px;
+    }
+    #playground input[placeholder] {
+        color: #42AEDC;
+        font-size: 14px;
+    }
+    #playground .bg-cat {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 100%;
+    }
+    /* rekomendasi */
+    #playground .rekomendasi .product-rekomendasi a,
+    #playground .terbaru .product-rekomendasi a {
+        text-decoration: none;
+    }
+    #playground .rekomendasi .left p,
+    #playground .terbaru .left p {
+        color: #000;
+        font-weight: bold;
+        font-size: 17px;
+        margin-top: 10px;
+    }
+    #playground .head .columns span {
+        float: right;
+        font-size: 100px;
+        font-weight: bold;
+        color: #FFFFFF;
+    }
+    /* rekomendasi */
+    #playground .rekomendasi .left p,
+    #playground .terbaru .left p {
+        color: #000;
+        font-weight: bold;
+        font-size: 17px;
+        margin-top: 10px;
+    }
+    #playground .rekomendasi .card,
+    #playground .terbaru .card {
+        border: none;
+        width: 100%;
+        height: auto;
+        background: #FFFFFF;
+        border-radius: 10px;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.123);
+    }
+    #playground .rekomendasi .desc,
+    #playground .terbaru .desc {
+        padding: 5px;
+        width: 100%;
+        height: auto;
+    }
+    #playground .rekomendasi .product-rekomendasi .card h1,
+    #playground .terbaru .product-rekomendasi .card h1 {
+        font-family: 'Worksans';
+        font-size: 13px;
+        color: #000000;
+        font-weight: bold;
+    }
+    /* rekomendasi slider product */
+    #playground .rekomendasi .product-rekomendasi,
+    #playground .terbaru .product-rekomendasi {
+        width: 100%;
+        height: auto;
+        border: 1px solid #fff;
+        display: flex;
+        padding-right: 9px;
+        padding-left: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    #playground .rekomendasi .product-rekomendasi::-webkit-scrollbar,
+    #playground .terbaru .product-rekomendasi::-webkit-scrollbar {
+        width: 0;
+        margin-right: 9px;
+    }
+    #playground .rekomendasi .product-rekomendasi .card,
+    #playground .terbaru .product-rekomendasi .card {
+        min-width: 103px;
+        height: auto;
+        background: white;
+        margin-right: 9px;
+        margin-bottom: 20px;
+    }
+    #playground .terbaru .product-rekomendasi {
+        margin-bottom: 80px;
+    }
+    #playground .columns span {
+        float: right;
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+    }
+    /* HALAMAN TAB TRANSAKSI */
+    #head-transaction .top-container .tabs .content {
+        height: 405px;
+        overflow: scroll;
+    }
+    #head-transaction .top-container .tabs .content::-webkit-scrollbar {
+        display: none;
+    }
+    #head-transaction .top-container {
+        width: 100%;
+        height: 190px;
+        padding-top: 20px;
+        background: #42AEDC;
+        border-radius: 0px 0px 25px 25px;
+    }
+    #head-transaction .top-container .tabs h1 {
+        color: rgb(0, 0, 0);
+        font-size: 13px;
+    }
+    #head-transaction .top-container .tabs .content .tagihan h2 {
+        color: rgb(0, 0, 0);
+        font-size: 11px;
+    }
+    #head-transaction .top-container h1 {
+        color: white;
+    }
+    /* search box head-transaction */
+    #head-transaction .search-box {
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    #head-transaction input[type=text] {
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+        border: none;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.219);
+        border-radius: 50px;
+        font-size: 16px;
+        background-image: url('../Assets/ic_search.png');
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+    }
+    #playground input::placeholder {
+        color: #42AEDC;
+        font-size: 14px;
+    }
+    #playground input[placeholder] {
+        /* font-family: 'roboto'; */
+        color: #42AEDC;
+        font-size: 14px;
+    }
+    /* tabs transaction */
+    #head-transaction .top-container .tabs {
+        color: #FFFFFF;
+        border-radius: .3rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #head-transaction .tabs input {
+        display: none;
+    }
+    #head-transaction .tabs label {
+        flex: 1;
+        text-align: center;
+        color: #FFFFFF;
+        line-height: 2.5rem;
+        font-size: 14px;
+        /* font-family: 'Roboto'; */
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color .2s ease, box-shadow .2s ease;
+    }
+    #head-transaction .tabs input:checked+label {
+        box-shadow: inset 0 -.2rem #ffffff;
+    }
+    #head-transaction .container {
+        /* margin-top: 80px; */
+        display: flex;
+        overflow: hidden;
+        color: black;
+    }
+    /* ukuran bg content */
+    #head-transaction .tabs .content {
+        flex: 0 0 20rem;
+        padding: 10px;
+        margin-top: 5px;
+        box-sizing: border-box;
+        transition: transform .5s ease;
+    }
+    /* tagihan */
+    #head-transaction .top-container .body-content .content .tagihan .col-2 {
+        padding: 0;
+    }
+    /* penyewaan */
+    #head-transaction .top-container .body-content .content .penyewaan .col-2 {
+        padding: 0;
+    }
+    #head-transaction .top-container .body-content .content .tagihan .col-4 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /* Riwayat */
+    #head-transaction .top-container .body-content .content .riwayat .col-2 {
+        padding: 0;
+    }
+    #head-transaction .top-container .body-content .content .riwayat .col-4 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #head-transaction .body-content .content input:nth-of-type(2):checked~.container .content {
+        transform: translateX(-100%);
+    }
+    #head-transaction .body-content .content input:nth-of-type(3):checked~.container .content {
+        transform: translateX(-200%);
+    }
+    #head-transaction .body-content .content input:nth-of-type(4):checked~.container .content {
+        transform: translateX(-200%);
+    }
+    #head-transaction .body-content .tab-content .content .tagihan {
+        width: 100%;
+        height: auto;
+        background: #FFFFFF;
+        border-radius: 20px;
+    }
+    #head-transaction .body-content .content .tagihan h1,
+    #head-transaction .body-content .content .penyewaan h1,
+    #head-transaction .body-content .content .riwayat h1 {
+        color: black;
+        font-size: 15px;
+    }
+    #head-transaction .body-content .content .tagihan h4,
+    #head-transaction .body-content .content .penyewaan h4,
+    #head-transaction .body-content .content .riwayat h4 {
+        font-size: 13px;
+        padding-top: 2px;
+        line-height: 12px;
+    }
+    #head-transaction .body-content .tab-content .content .tagihan h6,
+    #head-transaction .body-content .tab-content .content .penyewaan h6,
+    #head-transaction .body-content .tab-content .content .riwayat h6 {
+        font-size: 10px;
+        padding-top: 2px;
+        line-height: 11px;
+    }
+    #head-transaction .body-content .tab-content .content .tagihan,
+    #head-transaction .body-content .tab-content .content .penyewaan,
+    #head-transaction .body-content .tab-content .content .riwayat {
+        width: 100%;
+        height: auto;
+        background: #FFFFFF;
+        border-radius: 10px;
+        color: black;
+        padding: 5px;
+    }
+    #head-transaction .body-content .tab-content .content .tagihan .img-transactions,
+    #head-transaction .body-content .tab-content .content .penyewaan .img-transactions,
+    #head-transaction .body-content .tab-content .content .riwayat .img-transactions {
+        width: 100%;
+        height: auto;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    #head-transaction .body-content .tab-content .content .col {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    /*  */
+    /* HALAMAN  TAB ADD SEWA */
+    #add-sewa h1 {
+        font-size: 18px;
+        font-weight: 200;
+        line-height: 25px;
+        color: #000000;
+        margin-top: 25px;
+    }
+    /* HALAMAN LIST PRODUCT */
+    #head-barang .list-product {
+        width: 100%;
+        height: 9rem;
+        background: #ffffff;
+    }
+    #head-barang h1 {
+        /* font-family: Roboto; */
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    #head-barang input[type=text] {
+        width: 100%;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 50px;
+        font-size: 16px;
+        background-image: url('../Assets/ic_search.png');
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        border: none;
+        padding: 12px 20px 12px 40px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+    }
+    #head-barang input::placeholder {
+        color: #42AEDC;
+        font-size: 14px;
+    }
+    #head-barang input[placeholder] {
+        /* font-family: 'roboto'; */
+        color: #42AEDC;
+        font-size: 14px;
+    }
+    /* #body-barang {
+        margin-top: 46%;
+    } */
+    #body-barang .images {
+        margin-top: 150%;
+    }
+    #body-barang .card {
+        border-radius: 10px;
+        margin: 10px;
+        border: none;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        background: #FFFFFF;
+    }
+    #body-barang .card .desc {
+        padding: 10px;
+    }
+    #head-barang .category {
+        width: 100%;
+        height: auto;
+        display: flex;
+        overflow-x: auto;
+    }
+    #head-barang .category::-webkit-scrollbar {
+        width: 0;
+    }
+    #head-barang .category .bg-category-barang {
+        min-width: 90px;
+        height: auto;
+        margin-right: 7px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+        border-radius: 21px
+    }
+    #details-product .head-product {
+        background: rgba(255, 255, 255, 0);
+        transition: 0.5s ease;
+    }
+    #details-product .head-product.scrolled {
+        background: rgb(255, 255, 255);
+    }
+    #details-product .harga-details {
+        margin-top: 15px;
+    }
+    #details-product .desc p {
+        line-height: 16px;
+        text-align: justify;
+    }
+    #details-product .container {
+        margin-bottom: 70px;
+    }
+    #details-product .atur-sewa {
+        border: 1px solid #EED7D7;
+        padding-top: 10px;
+        /* margin-right: 10px;
+        margin-left: 10px; */
+        /* padding: 8px; */
+        border-radius: 5px;
+    }
+    #details-product .atur-sewa i {
+        color: #2196F3;
+    }
+    #details-product .atur-sewa span {
+        margin-right: 5px;
+        margin-left: 5px;
+        font-weight: bold;
+    }
+    #details-product .spec li,
+    #checkout .spec li {
+        list-style: none;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 13px;
+        color: #000000;
+    }
+    #details-product .spec li span,
+    #checkout .spec li span {
+        float: right;
+    }
+    #details-product .desc .bg-desc {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        height: 80px;
+        background: rgb(249, 249, 251);
+        overflow: scroll;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    #details-product .pelapak .chat i {
+        color: #644697;
+    }
+    #bottom-bar .bottom-container {
+        width: 100%;
+        height: auto;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    #bottom-bar .bottom-container .btn-favorite i {
+        color: #644697;
+    }
+    #bottom-bar .bottom-container .btn-cart i {
+        color: #644697;
+    }
+    #bottom-bar .bottom-container .btn-outline-primary {
+        font-size: 14px;
+    }
+    #bottom-bar .bottom-container .btn-primary {
+        background: #644697;
+        border-radius: 5px;
+        font-size: 14px;
+        border: none;
+    }
+    /* KERANJANG */
+    /* #keranjang-product .body input,
+    #checkout .body .daftar-sewa input {
+        width: 20px;
+    } */
+    #keranjang-product .minus:hover,
+    #checkout .daftar-sewa .minus:hover {
+        background-color: #7180e000 !important;
+        width: 30px;
+        height: 30px;
+    }
+    #keranjang-product .plus:hover,
+    #checkout .daftar-sewa .plus:hover {
+        background-color: #7180e000 !important;
+        width: 30px;
+        height: 30px;
+    }
+    #keranjang-product .body input:disabled,
+    #checkout .body .daftar-sewa input:disabled {
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+    }
+    #keranjang-product .body .count,
+    #checkout .body .daftar-sewa .count {
+        color: #000;
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+        min-width: 30px;
+        text-align: center;
+    }
+    #keranjang-product .body .plus,
+    #checkout .body .daftar-sewa .plus {
+        cursor: pointer;
+        display: inline-block;
+        color: white;
+        width: 30px;
+        height: 30px;
+        font: 30px/1 Arial, sans-serif;
+        border-radius: 50%;
+    }
+    #keranjang-product .body .minus,
+    #checkout .body .daftar-sewa .minus {
+        cursor: pointer;
+        color: white;
+        width: 30px;
+        height: 30px;
+        font: 30px/1 Arial, sans-serif;
+        text-align: center;
+        border-radius: 50%;
+        background-clip: padding-box;
+    }
+    #keranjang-product .bg-head,
+    #checkout .bg-head,
+    #tagihan-details .bg-head,
+    #tagihan-details {
+        width: 100%;
+        height: auto;
+        background: white;
+    }
+    #keranjang-product .body {
+        padding-top: 25px;
+        padding-bottom: 105px;
+    }
+    #keranjang-product .body .col-3,
+    #keranjang-product .body .col-8 {
+        padding-left: 0;
+    }
+    #keranjang-product .body .col-1 {
+        padding-left: 0;
+    }
+    #keranjang-product .body .fa-plus-circle,
+    #checkout .daftar-sewa .fa-plus-circle {
+        color: #644697;
+    }
+    #keranjang-product .body .fa-minus-circle,
+    #checkout .daftar-sewa .fa-minus-circle {
+        color: #7C978B;
+    }
+    #keranjang-product .body .fa-trash-alt {
+        color: #BC2121;
+    }
+    /* bottom fix bar */
+    #bottom-keranjang .navbar-expand,
+    #bottom-checkout .navbar-expand {
+        width: 100%;
+        height: auto;
+        background: white;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    #bottom-keranjang .btn,
+    #bottom-checkout .btn {
+        display: block;
+    }
+    #bottom-keranjang .btn .row,
+    #bottom-checkout .btn .row {
+        margin: 0;
+        color: white;
+    }
+    #bottom-keranjang .btn h3,
+    #bottom-checkout .btn h3 {
+        margin: 0;
+        color: white;
+    }
+    /* HALAMAN CHECKOUT */
+    #checkout .body {
+        padding-top: 65px;
+        padding-bottom: 105px;
+    }
+    #checkout .body i {
+        color: #644697;
+    }
+    #checkout .body .daftar-sewa .col-3,
+    #tagihan-details .body .daftar-sewa .col-3 {
+        padding-right: 0;
+    }
+    #checkout .body .desc .bg-desc {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        height: 80px;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    /* SUCCESS */
+    #success .body {
+        margin-top: 50%;
+    }
+    /* TAGIHAN */
+    #tagihan-details .body {
+        margin-top: 70px;
+    }
+    #tagihan-details .body .bg-tagihan-bayar {
+        border: 2px solid #EAE5E5;
+        box-sizing: border-box;
+        filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.24));
+        border-radius: 10px;
+        width: 100%;
+        height: 50px;
+    }
+    #tagihan-details span {
+        float: right;
+    }
+    #tagihan-details .body .bg-tagihan-bayar input,
+    #tagihan-details .body .pembayaran input {
+        width: 100%;
+        height: auto;
+        border: none;
+        background: none;
+        box-shadow: none;
+    }
+    #tagihan-details .body .pembayaran input {
+        width: 100%;
+        height: auto;
+        border: none;
+        background: none;
+        box-shadow: none;
+        text-align: center;
+    }
+    #tagihan-details .body .bg-tagihan-bayar input,
+    #tagihan-details .body .pembayaran input[type="text"],
+    button[type="button"] {
+        margin: 0;
+    }
+    #tagihan-details .body .bg-note {
+        width: 100%;
+        height: auto;
+        background: #644697;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    #tagihan-details .body .bg-note h4 {
+        color: white;
+    }
+    #tagihan-details .desc .bg-desc {
+        width: 100%;
+        height: 50px;
+        background: rgb(249, 249, 251);
+        overflow: scroll;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    /* ADD SEWA */
+    #add-sewa .bg-body {
+        width: 100%;
+        padding: 20px;
+        height: auto;
+        background: #FFFFFF;
+        border-radius: 10px;
+        filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.1));
+    }
+    /* SUB MENU - PILIH BARANG */
+    #pilih-barang .bg-body {
+        width: 100%;
+        padding: 20px;
+        height: auto;
+        background: #FFFFFF;
+        border-radius: 10px;
+        /* overflow: scroll; */
+        filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.1));
+    }
+    /* SUB MENU - DESKRIPSI-BARANG */
+    #desk-barang .category,
+    #pilih-barang .category {
+        margin-top: 80px;
+    }
+    #desk-barang .bg-body {
+        width: 100%;
+        padding: 20px;
+        height: auto;
+        background: #FFFFFF;
+        border-radius: 10px;
+        /* overflow: scroll; */
+        filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.1));
+    }
+    #desk-barang .category .desc .col {
+        padding: 0;
+    }
+    /* bottom fix bar SUB-MENU DESKRIPSI */
+    .bottom-deskripsiBarang .btn {
+        display: block;
+        margin-top: 50px;
+    }
+    .bottom-deskripsiBarang .btn h3 {
+        color: white;
+    }
+    /*UPDATE 8 DESEMBER
+/* Tambahan Amin */
+    /* The switch - the box around the slider */
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+    }
+    /* Hide default HTML checkbox */
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    /* The slider */
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+    input:checked+.slider {
+        background-color: #2196F3;
+    }
+    input:focus+.slider {
+        box-shadow: 0 0 1px #2196F3;
+    }
+    input:checked+.slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+    /* Rounded sliders */
+    .slider.round {
+        border-radius: 34px;
+    }
+    .slider.round:before {
+        border-radius: 50%;
+    }
+    /* transisi ridho */
+    .is-transitioning {
+        pointer-events: none;
+        cursor: progress;
+    }
+    body {
+        position: relative;
+    }
+    .wrapper {
+        position: absolute;
+        width: 100vw;
+    }
+    /* fixed top after scroll */
+    .sticky {
+        position: sticky;
+    }
+    #head-title {
+        /* background: green; */
+        /* padding: 10px; */
+        z-index: 2;
+        margin-top: 15px;
+    }
+    #head-title a {
+        color: white;
+        padding: inherit;
+    }
+    .sticky {
+        position: fixed;
+        /* margin-top: 65px; */
+        top: 0;
+        width: 100%;
+    }
+    /* PROFILE */
+    /* #profile .content {
+        margin-top: 20px;
+    } */
+    #profile .head {
+        width: 100%;
+        height: auto;
+        background: rgb(255, 255, 255);
+    }
+    #profile .body-content {
+        margin-top: 55px;
+    }
+    #profile .bg-notif {
+        background: #71C2E5;
+        box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        padding: 10px;
+    }
+    #profile .pinjam-content-peminjem h1 {
+        font-weight: bold;
+        font-size: 18px;
+    }
+    #profile .pinjam-content-peminjem h2 {
+        font-weight: normal;
+        font-size: 15px;
+    }
+    #profile .pinjam-content-vendor h2 {
+        font-weight: bold;
+        font-size: 15px;
+    }
+    #profile .pinjam-content-vendor p {
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 15px;
+        color: #515151;
+    }
+    #profile .nav-pills .nav-link.active,
+    #profile .nav-pills .show>.nav-link {
+        color: #000000!important;
+        font-weight: bold;
+        background-color: #ffffff!important;
+        border-bottom: 2px solid #000000;
+    }
+    #profile,
+    .nav-link {
+        color: #644697!important;
+    }
+    /* ATUR HARGA SEWA */
+    #atur-harga-sewa .bg-harga,
+    #atur-alamat .bg-atur-alamat,
+    #lokasi .bg-lokasi {
+        width: 100%;
+        margin-top: 25%;
+        padding: 10px;
+        height: auto;
+        background: #FFFFFF;
+        border-radius: 10px;
+        filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.1));
+    }
+    /* ----------selasa 15 des 2020---update----------------- add new --------------------------------- */
+    /* STATUS PINJEM */
+    /* #status-pinjem .body-content {
+        margin-top: 70px;
+        position: absolute;
+    } */
+    #status-pinjem .nav-pills .nav-link.active,
+    #status-pinjem .nav-pills .show>.nav-link {
+        color: #644697!important;
+        font-weight: bold;
+        background-color: #ffffff!important;
+        border-bottom: 2px solid #000000;
+    }
+    #status-pinjem,
+    .nav-link {
+        color: #644697!important;
+    }
+    #status-pinjem,
+    .tab-pane {
+        color: #ab96d0!important;
+    }
+    #status-pinjem .body-content span {
+        font-size: 13px;
+    }
+    #status-pinjem .progressbar-pengiriman,
+    #status-pinjem .progressbar-peminjeman,
+    #status-pinjem .progressbar-pengembalian {
+        counter-reset: step;
+    }
+    #status-pinjem .progressbar-pengiriman li,
+    #status-pinjem .progressbar-peminjeman li,
+    #status-pinjem .progressbar-pengembalian li {
+        list-style-type: none;
+        /* float: left; */
+        width: 100%;
+        position: relative;
+        /* text-align: center */
+    }
+    #status-pinjem .progressbar-pengiriman li:before,
+    #status-pinjem .progressbar-peminjeman li:before,
+    #status-pinjem .progressbar-pengembalian li:before {
+        content: '';
+        counter-increment: none;
+        counter-reset: none;
+        width: 0px;
+        height: 100%;
+        padding: 5px;
+        line-height: 70px;
+        /* border: 2px solid #ddd; */
+        /* display: block; */
+        /* text-align: center; */
+        /* margin: 0 auto 10px auto; */
+        margin-left: 8px;
+        border-radius: 10%;
+        background-color: #ddd;
+    }
+    #status-pinjem .progressbar-pengiriman li:after,
+    #status-pinjem .progressbar-peminjeman li:after,
+    #status-pinjem .progressbar-pengembalian li:after {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        background-color: #ddd;
+        top: -26px;
+        left: 12px;
+        z-index: -1;
+    }
+    /* #status-pinjem .progressbar-pengiriman li:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 500px;
+        border-left: 5px solid #ddd;
+        background-color: #ddd;
+        top: 0;
+        margin-left: 3px;
+        left: 50%;
+        z-index: -1;
+    } */
+    #status-pinjem .progressbar-pengiriman li:first-child:after,
+    #status-pinjem .progressbar-peminjeman li:first-child:after,
+    #status-pinjem .progressbar-pengembalian li:first-child:after {
+        content: none;
+    }
+    #status-pinjem .progressbar-pengiriman li.active,
+    #status-pinjem .progressbar-peminjeman li.active,
+    #status-pinjem .progressbar-pengembalian li.active {
+        color: #644697;
+        font-weight: bold;
+    }
+    #status-pinjem .progressbar-pengiriman li.active:before,
+    #status-pinjem .progressbar-peminjeman li.active:before,
+    #status-pinjem .progressbar-pengembalian li.active:before {
+        background-color: #644697;
+    }
+    #status-pinjem .progressbar-pengiriman li.active+li:after,
+    #status-pinjem .progressbar-peminjeman li.active+li:after,
+    #status-pinjem .progressbar-pengembalian li.active+li:after {
+        background-color: #644697;
+    }
+    /* DETAIL-PENYEWAAN */
+    #progress img {
+        height: 20px;
+    }
+    #progress .circle-progress {
+        width: 100%;
+    }
+    #progress .circle-progress>div:nth-child(1) {
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        background-color: #6d6d6d;
+    }
+    #progress .circle-progress.done>div:nth-child(1) {
+        background-color: #42AEDC;
+    }
+    #progress>div:nth-child(1) .circle-progress.done>div:nth-child(2) {
+        width: 50%;
+        height: 1px;
+        position: relative;
+        top: -5px;
+        background-color: #42AEDC;
+    }
+    #progress .circle-progress.done>div:nth-child(2) {
+        width: 100%;
+        height: 1px;
+        position: relative;
+        top: -5px;
+        background-color: #42AEDC;
+    }
+    #progress>div:last-child .circle-progress.done>div:nth-child(2) {
+        width: 50%;
+        height: 1px;
+        position: relative;
+        top: -5px;
+        background-color: #42AEDC;
+    }
+    #info-penyewaan .desc .bg-desc {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        height: 50px;
+        background: rgb(249, 249, 251);
+        overflow: scroll;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    /* STATUS SELESAI RIWAYAT */
+    #info-tagihan a {
+        font-family: 'Worksans';
+    }
+    #info-tagihan .c-primary {
+        color: #42AEDC;
+    }
+    #info-tagihan .c-grey {
+        color: #c4c4c4;
+    }
+    #progress img {
+        height: 20px;
+    }
+    #progress .circle-progress {
+        width: 100%;
+    }
+    #progress .circle-progress>div:nth-child(1) {
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        background-color: #6d6d6d;
+    }
+    #progress .circle-progress.done>div:nth-child(1) {
+        background-color: #42AEDC;
+    }
+    #progress>div:nth-child(1) .circle-progress.done>div:nth-child(2) {
+        width: 50%;
+        height: 1px;
+        position: relative;
+        top: -5px;
+        background-color: #42AEDC;
+    }
+    #progress .circle-progress.done>div:nth-child(2) {
+        width: 100%;
+        height: 1px;
+        position: relative;
+        top: -5px;
+        background-color: #42AEDC;
+    }
+    #progress>div:last-child .circle-progress.done>div:nth-child(2) {
+        width: 50%;
+        height: 1px;
+        position: relative;
+        top: -5px;
+        background-color: #42AEDC;
+    }
+    #info-penyewaan .desc .bg-desc {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        height: 50px;
+        background: rgb(249, 249, 251);
+        overflow: scroll;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    #info-penyewaan span {
+        font-size: 14px;
+    }
+    /* EDIT PROFILE PEMILIK */
+    .shadows {
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    }
+    .b-rad {
+        border-radius: 5px;
+    }
+    .circle {
+        width: 50px;
+        border-radius: 25px;
+        height: 50px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    h4 {
+        font-size: 10px;
+    }
+    span {
+        font-size: 10px;
+    }
+    a,
+    select,
+    input,
+    span {
+        font-family: "Worksans";
+    }
+    .c-primary {
+        color: #42aedc;
+    }
+    .c-grey {
+        color: #c4c4c4;
+    }
+    .c-orange {
+        color: #E0A537;
+    }
+    #progress img {
+        height: 20px;
+    }
+    #progress .circle-progress {
+        width: 100%;
+    }
+    #progress .circle-progress>div:nth-child(1) {
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        background-color: #6d6d6d;
+    }
+    #progress .circle-progress.done>div:nth-child(1) {
+        background-color: #42aedc;
+    }
+    #progress>div:nth-child(1) .circle-progress.done>div:nth-child(2) {
+        width: 50%;
+        height: 1px;
+        position: relative;
+        top: -5px;
+        background-color: #42aedc;
+    }
+    #progress .circle-progress.done>div:nth-child(2) {
+        width: 100%;
+        height: 1px;
+        position: relative;
+        top: -5px;
+        background-color: #42aedc;
+    }
+    #progress>div:last-child .circle-progress.done>div:nth-child(2) {
+        width: 50%;
+        height: 1px;
+        position: relative;
+        top: -5px;
+        background-color: #42aedc;
+    }
+    /* DETAIL-RIWAYAT */
+    span {
+        font-size: 15px;
+        color: black;
+        font-family: 'Worksans';
+        line-height: 1.6;
+        margin-bottom: 0;
+        color: #6d6d6d;
+    }
+    #progress>* {
+        font-family: 'Worksans';
+        font-size: 14px;
+    }
+    #progress img {
+        height: 33px;
+    }
+    #progress .circle-progress {
+        width: 100%;
+    }
+    #progress .circle-progress>div:nth-child(1) {
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        background-color: #6d6d6d;
+    }
+    #progress .circle-progress.done>div:nth-child(1) {
+        background-color: #42AEDC;
+    }
+    #progress>div:nth-child(1) .circle-progress.done>div:nth-child(2) {
+        width: 50%;
+        height: 1px;
+        position: relative;
+        top: -5px;
+        background-color: #42AEDC;
+    }
+    #progress .circle-progress.done>div:nth-child(2) {
+        width: 100%;
+        height: 1px;
+        position: relative;
+        top: -5px;
+        background-color: #42AEDC;
+    }
+    #progress>div:last-child .circle-progress.done>div:nth-child(2) {
+        width: 50%;
+        height: 1px;
+        position: relative;
+        top: -5px;
+        background-color: #42AEDC;
+    }
+    #detil-peminjem div>div:nth-child(1)>span {
+        color: black;
+    }
+    .shadows {
+        box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);
+    }
+    .b-rad {
+        border-radius: 10px;
+    }
+    .circle {
+        width: 50px;
+        border-radius: 25px;
+        height: 50px;
+    }
+    /* head transaction - icon progress */
+    #head-transaction .content .penyewaan .progress img {
+        height: 18px;
+        width: auto;
+    }
+    #head-transaction .content .penyewaan .progress .circle-progress {
+        width: 100%;
+    }
+    #head-transaction .content .penyewaan .progress .circle-progress>div:nth-child(1) {
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        background-color: #e8dede;
+    }
+    /* non progress */
+    #head-transaction .content .penyewaan .progress .circle-progress>div:nth-child(1) {
+        background-color: #e8dede;
+    }
+    #head-transaction .content .penyewaan .progress>div:nth-child(1) .circle-progress>div:nth-child(2) {
+        width: 100%;
+        left: 22px;
+        height: 1px;
+        position: relative;
+        top: -5px;
+        background-color: #e8dede;
+    }
+    #head-transaction .content .penyewaan .progress .circle-progress>div:nth-child(2) {
+        width: 100%;
+        height: 1px;
+        position: relative;
+        top: -5px;
+        background-color: #e8dede;
+    }
+    #head-transaction .content .penyewaan .progress>div:last-child .circle-progress>div:nth-child(2) {
+        width: 50%;
+        height: 1px;
+        position: relative;
+        top: -5px;
+        background-color: #e8dede;
+    }
+    /* progress circle active */
+    #head-transaction .content .penyewaan .progress .done>div:nth-child(1) {
+        background-color: #42AEDC;
+    }
+    /* progress line active */
+    #head-transaction .content .penyewaan .progress>div:nth-child(1) .done>div:nth-child(2) {
+        width: 100%;
+        left: 22px;
+        height: 1px;
+        position: relative;
+        top: -5px;
+        background-color: #42AEDC;
+    }
+    #head-transaction .content .penyewaan .progress .done>div:nth-child(2) {
+        width: 100%;
+        height: 1px;
+        position: relative;
+        top: -5px;
+        background-color: #42AEDC;
+    }
+    #head-transaction .content .penyewaan .progress>div:last-child .done>div:nth-child(2) {
+        width: 50%;
+        height: 1px;
+        position: relative;
+        top: -5px;
+        background-color: #42AEDC;
+    }
+    #info-penyewaan .desc .bg-desc {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        height: 50px;
+        background: rgb(249, 249, 251);
+        overflow: scroll;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    .progress {
+        FONT-WEIGHT: 200;
+        background: none;
+        border: none;
+        height: 2.5rem;
+        /* padding: .125rem; */
+    }
+    #detail-pinjem h6 {
+        margin-top: 10px;
+        color: #634596;
+        font-size: 14px;
+        line-height: 15px;
+    }
+    #notif .icon {
+        margin-left: -3px;
+    }
+    #notif .icon span {
+        padding: 2px;
+        background: #f00;
+        font-size: 12px;
+        height: 20px;
+        width: 20px;
+        object-fit: cover;
+        border-radius: 50%;
+        color: #fff;
+        margin-left: -3px;
+    }
+    #notif .icon img {
+        display: inline-block;
+        margin-top: 20px;
+    }
+    #notif .icon:hover {
+        opacity: 100%;
+    }
+    #notif .notif-box {
+        width: 300px;
+        height: 0px;
+        opacity: 0;
+        border-radius: 10px 0px 10px 10px;
+        overflow: scroll;
+        position: absolute;
+        margin-top: 6px;
+        background: white;
+        right: 35px;
+        transition: 1s opacity;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    #notif .notif-box h2 {
+        font-size: 14px;
+        padding: 10px;
+        border-bottom: 1px solid #eee;
+        color: #999;
+    }
+    #notif .notif-box h2 span {
+        color: #f00;
+    }
+    #notif .notif-item {
+        display: flex;
+        border-bottom: 1px solid #eee;
+        padding: 10px 10px;
+        margin-bottom: 15px;
+        cursor: pointer;
+    }
+    #notif .notif-item:hover {
+        background-color: #eee;
+    }
+    #notif .notif-item img {
+        display: block;
+        width: 50px;
+        margin-right: 10px;
+        border-radius: 50%;
+    }
+    #notif .notif-item .text h4 {
+        color: rgb(70, 50, 50);
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    #notif .notif-item .text p {
+        color: #aaa;
+        font-size: 12px;
+    }
+    /* profil edit */
+    #upload-photo {
+        opacity: 0;
+        position: absolute;
+        z-index: -1;
+    }
+    #upload-photo2 {
+        opacity: 0;
+        position: absolute;
+        z-index: -1;
+    }
+    #upload-photo3 {
+        opacity: 0;
+        position: absolute;
+        z-index: -1;
+    }
+    .profile-pict {
+        height: 70px;
+        width: 70px;
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        overflow: hidden;
+        border: 1px solid grey;
+    }
+    #photo {
+        height: 100%;
+        width: 100%;
+    }
+    #file {
+        display: none;
+    }
+    #uploadButton {
+        height: 40px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        transform: translateX(-50%);
+        text-align: center;
+        left: 50%;
+        background: rgba(0, 0, 0, 0.7);
+        color: wheat;
+        line-height: 30px;
+        font-size: 15px;
+        font-family: sans-serif;
+        cursor: pointer;
+        display: none;
+    }
+}
